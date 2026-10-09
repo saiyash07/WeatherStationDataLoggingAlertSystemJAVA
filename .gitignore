@@ -1,0 +1,12 @@
+# build output
+out/
+*.class
+
+# documents are not part of the repository
+*.pdf
+
+# OS / IDE
+.DS_Store
+.idea/
+*.iml
+.vscode/
