@@ -238,6 +238,7 @@ A dependency-free runner (`weather.Tests`) executes **42 tests** and exits non-z
 
 ```
 .
+├── WeatherApp.java             original single-file prototype (kept for reference)
 ├── run.sh                      build + run helper (gui | demo | test)
 ├── screenshots/                GUI screenshots used in this README
 └── src/weather/
@@ -251,6 +252,13 @@ A dependency-free runner (`weather.Tests`) executes **42 tests** and exits non-z
     ├── ui/                     MainFrame, SensorTableModel, HourlyChartPanel
     └── tools/                  ScreenshotTool (development aid)
 ```
+
+## Original prototype
+
+[`WeatherApp.java`](WeatherApp.java) in the repository root is the first single-file version of this project
+(sensors, readings, alerts, add / delete / search / sort and a start/stop logger in about 80 lines). It is kept
+unchanged for reference. Its `run()` method is commented out, so it is not part of the build; the complete
+application lives in [`src/`](src) and is what `run.sh` compiles and runs.
 
 ## Roadmap
 
